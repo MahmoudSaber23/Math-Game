@@ -1,4 +1,4 @@
-# 🧮 Math Quiz Game (C++)
+Math Quiz Game 
 
 A **console-based math game** written in C++ that challenges you with randomly generated arithmetic questions based on difficulty and operation type.  
 It’s a simple but complete project for learning **functions, enums, structs, randomization, and game loops** in C++.
