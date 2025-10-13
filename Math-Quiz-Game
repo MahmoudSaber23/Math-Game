@@ -21,7 +21,7 @@ struct stQuestion
 struct stQuizz
 {
     stQuestion QuestionList[100];
-    short NumberOfQuestions;
+    short NumberOfQuestions = 0;
     enQuestionLevel QuestionsLevel;
     enOperrationType OpType;
     short NumberOfWrongAnswers = 0;
