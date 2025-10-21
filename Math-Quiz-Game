@@ -162,8 +162,7 @@ void GenerateQuizzQuestions(stQuizz& Quizz)
 short ReadQuestionAnswer()
 {
     short Answer = 0;
-    cin >> Answer;
-    return Answer;
+    cin >> Answer;return Answer;
 }
 
 void PrintTheQuestion(stQuizz& Quizz, short QuestionNumber)
@@ -214,7 +213,7 @@ string GetFinalResultText(bool Pass)
 void PrintQuizzResults(stQuizz Quizz)
 {
     cout << "\n________________________________\n\n";
-    cout << "Final Results is " << GetFinalResultText(Quizz.IsPass);
+    cout << "  Final Results is " << GetFinalResultText(Quizz.IsPass);
     cout << "\n_______________________________\n\n";
     cout << "Number of Questions: " << Quizz.NumberOfQuestions << endl;
     cout << "Questions Level    : " << GetQuestionLevelText(Quizz.QuestionsLevel) << endl;
@@ -254,4 +253,3 @@ int main()
     StartGame();
     return 0;
 }
-
