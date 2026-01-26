@@ -1,58 +1,71 @@
-Math Quiz Game 
+# Math Quiz Game
 
-A **console-based math game** written in C++ that challenges you with randomly generated arithmetic questions based on difficulty and operation type.  
-It’s a simple but complete project for learning **functions, enums, structs, randomization, and game loops** in C++.
+A console-based math game written in C++ that challenges the player with randomly generated arithmetic questions based on selected difficulty levels and operation types.
 
----
-
-## 🚀 Features
-
-✅ Choose how many questions you want to answer (1–100).  
-✅ Select difficulty level:
-- **Easy** → Numbers from 1–10  
-- **Medium** → Numbers from 10–50  
-- **Hard** → Numbers from 50–100  
-- **Mix** → Random difficulty each time  
-
-✅ Choose operation type:
-- ➕ Addition  
-- ➖ Subtraction  
-- ✖ Multiplication  
-- ➗ Division  
-- 🔀 Mix (random each question)  
-
-✅ Automatically checks answers and shows whether you’re correct.  
-✅ Keeps track of correct and wrong answers.  
-✅ Displays your final results (Pass / Fail).  
-✅ Option to play again after each quiz.  
+This project is a simple but complete application for practicing core C++ concepts such as functions, enums, structs, randomization, and game loops.
 
 ---
 
-## 🧩 How It Works
+## Features
 
-1. The program asks:
-   - How many questions you want to answer.
+- Choose how many questions you want to answer (from 1 to 100).
+- Select a difficulty level:
+  - Easy: Numbers from 1 to 10
+  - Medium: Numbers from 10 to 50
+  - Hard: Numbers from 50 to 100
+  - Mix: Random difficulty for each question
+
+- Choose an operation type:
+  - Addition
+  - Subtraction
+  - Multiplication
+  - Division
+  - Mix (random operation for each question)
+
+- Automatically checks answers and provides immediate feedback.
+- Tracks correct and wrong answers during the quiz.
+- Displays final results as Pass or Fail.
+- Allows the player to replay the game after finishing a quiz.
+
+---
+
+## How It Works
+
+1. The program asks the player to choose:
+   - The number of questions.
    - The difficulty level.
-   - The type of math operation.
+   - The type of arithmetic operation.
 
-2. Then it randomly generates questions based on your choices.
+2. Based on the selected options, the program generates random math questions.
 
 3. For each question:
-   - You input your answer.
-   - The program checks if it’s correct.
-   - Your score is updated in real time.
+   - The player enters an answer.
+   - The program checks whether the answer is correct.
+   - The score is updated in real time.
 
-4. At the end:
-   - The final result is displayed (Pass or Fail).
-   - You can choose to play again.
-
----
-
-## 💻 Technologies Used
-- **Language:** C++  
-- **Libraries:** `<iostream>`, `<cstdlib>`, `<ctime>`  
-- **IDE Recommended:** Visual Studio, Code::Blocks, or any C++ compiler that supports C++11 or higher.
+4. At the end of the quiz:
+   - The final result is displayed.
+   - The player can choose to play again or exit.
 
 ---
 
+## Input Validation
 
+- The program validates user input to ensure only numeric values are accepted.
+- Invalid input does not crash the program.
+- The user is repeatedly prompted until valid input is entered.
+
+---
+
+## Technologies Used
+
+- Language: C++
+- Libraries:
+  - <iostream>
+  - <cstdlib>
+  - <ctime>
+
+- Recommended IDEs:
+  - Visual Studio
+  - Code::Blocks
+  - Any C++ compiler that supports C++11 or higher
