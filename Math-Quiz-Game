@@ -58,6 +58,15 @@ short ReadHowManyQuestions()
     {
         cout << "How Many Questions Do You Want To Answer ?(1 To 100) ";
         cin >> NumberOfQuestions;
+
+        if (cin.fail())
+        {
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            cout << "\nInvalid Input! Please Enter a Number ?\n";
+            continue;
+
+        }
     } while (NumberOfQuestions < 1 || NumberOfQuestions > 100);
     return NumberOfQuestions;
 }
@@ -162,7 +171,13 @@ void GenerateQuizzQuestions(stQuizz& Quizz)
 short ReadQuestionAnswer()
 {
     short Answer = 0;
-    cin >> Answer; return Answer;
+    while (!(cin >> Answer)) {
+        cin.clear();
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        cout << "Invalid input, enter a number: ";
+    }
+
+    return Answer;
 }
 
 void PrintTheQuestion(stQuizz& Quizz, short QuestionNumber)
@@ -244,6 +259,7 @@ void StartGame()
         PlayMathGame();
         cout << endl << "Do you want to play again? Y/N? ";
         cin >> PlayAgain;
+
     } while (PlayAgain == 'Y' || PlayAgain == 'y');
 }
 
@@ -252,5 +268,6 @@ int main()
     srand((unsigned)time(NULL));
 
     StartGame();
+
     return 0;
 }
