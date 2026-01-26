@@ -60,10 +60,6 @@ This project is a simple but complete application for practicing core C++ concep
 ## Technologies Used
 
 - Language: C++
-- Libraries:
-  - <iostream>
-  - <cstdlib>
-  - <ctime>
 
 - Recommended IDEs:
   - Visual Studio
