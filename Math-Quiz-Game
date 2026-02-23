@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+
 using namespace std;
 
 enum enQuestionLevel { EasyLevel = 1, MedLevel, HardLevel, Mix };
@@ -63,7 +64,7 @@ short ReadHowManyQuestions()
         {
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
-            cout << "\nInvalid Input! Please Enter a Number Between (1,100) ?\n\n";
+            cout << "\nInvalid Input! Please Enter a Number !\n\n";
             continue;
 
         }
@@ -83,7 +84,7 @@ enQuestionLevel ReadQuestionsLevel()
         {
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
-            cout << "\nInvalid Input! Please Enter a Number Between (1,4) ?\n";
+            cout << "\nInvalid Input! Please Enter a Number !\n";
             continue;
         }
 
@@ -103,7 +104,7 @@ enOperationType ReadOpType()
         {
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
-            cout << "\nInvalid Input! Please Enter a Number Between (1,5) ?\n";
+            cout << "\nInvalid Input! Please Enter a Number !\n";
             continue;
         }
 
