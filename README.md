@@ -1,26 +1,26 @@
 # Math Quiz Game
 
-A console-based math game written in C++ that challenges the player with randomly generated arithmetic questions based on selected difficulty levels and operation types.
-
-This project is a simple but complete application for practicing core C++ concepts such as functions, enums, structs, randomization, and game loops.
+A console-based math quiz game written in C++.  
+The game generates random arithmetic questions based on user-selected difficulty and operation type, helping players practice basic math skills while reinforcing core C++ programming concepts.
 
 ---
 
 ## Features
 
-- Choose how many questions you want to answer (from 1 to 100).
-- Select a difficulty level:
-  - Easy: Numbers from 1 to 10
-  - Medium: Numbers from 10 to 50
-  - Hard: Numbers from 50 to 100
-  - Mix: Random difficulty for each question
+- Choose number of questions (1 to 100).
+- Select difficulty level:
+  - Easy: Numbers from 1 to 10  
+  - Medium: Numbers from 20 to 50  
+  - Hard: Numbers from 50 to 100  
+  - Mix: Random difficulty per question  
 
-- Choose an operation type:
-  - Addition
-  - Subtraction
-  - Multiplication
-  - Division
-  - Mix (random operation for each question)
+- Select operation type:
+  - Addition  
+  - Subtraction  
+  - Multiplication  
+  - Division  
+  - Modulus  
+  - Mix (random operation per question)
 
 - Automatically checks answers and provides immediate feedback.
 - Tracks correct and wrong answers during the quiz.
